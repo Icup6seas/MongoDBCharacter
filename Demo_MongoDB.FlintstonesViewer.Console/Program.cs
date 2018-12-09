@@ -102,7 +102,7 @@ namespace Demo_FileIO_NTier
                     Age = 2,
                     Gender = Character.GenderType.MALE
                 },
-                                new Character()
+                new Character()
                 {
                     Id = 7,
                     LastName = "",

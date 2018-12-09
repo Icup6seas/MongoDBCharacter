@@ -11,10 +11,10 @@ namespace Demo_FileIO_NTier.BusinessLogicLayer
 {
     class OtherCharacterBLL
     {
-        IDataService _dataService;
+        IDataServiceOtherCharacter _dataService;
         List<OtherCharacter> _othercharacters;
 
-        public OtherCharacterBLL(IDataService dataservice)
+        public OtherCharacterBLL(IDataServiceOtherCharacter dataservice)
         {
             _dataService = dataservice;
         }

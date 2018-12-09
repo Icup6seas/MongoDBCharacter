@@ -73,6 +73,7 @@
     <Compile Include="Models\Character.cs" />
     <Compile Include="Models\OtherCharacter.cs" />
     <Compile Include="PresentationLayer\Presenter.cs" />
+    <Compile Include="ProgramOtherCharacter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

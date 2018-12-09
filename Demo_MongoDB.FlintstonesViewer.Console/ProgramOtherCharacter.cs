@@ -44,7 +44,7 @@ namespace Demo_FileIO_NTier
                     LastName = "Zero",
                     FirstName = "Sub",
                     Game = "Mortal Kombat",
-                    Gender = OtherCharacter.GenderType.FEMALE
+                    Gender = OtherCharacter.GenderType.MALE
                 },
                 new OtherCharacter()
                 {
@@ -52,7 +52,7 @@ namespace Demo_FileIO_NTier
                     LastName = "",
                     FirstName = "Scorpion",
                     Game = "Mortal Kombat",
-                    Gender = OtherCharacter.GenderType.FEMALE
+                    Gender = OtherCharacter.GenderType.MALE
                 },
                 new OtherCharacter()
                 {
@@ -60,7 +60,7 @@ namespace Demo_FileIO_NTier
                     LastName = "Kang",
                     FirstName = "Liu",
                     Game = "Mortal Kombat",
-                    Gender = OtherCharacter.GenderType.FEMALE
+                    Gender = OtherCharacter.GenderType.MALE
                 },
                 new OtherCharacter()
                 {
@@ -68,7 +68,7 @@ namespace Demo_FileIO_NTier
                     LastName = "Kahn",
                     FirstName = "Shao",
                     Game = "Mortal Kombat",
-                    Gender = OtherCharacter.GenderType.FEMALE
+                    Gender = OtherCharacter.GenderType.MALE
                 },
                 new OtherCharacter()
                 {
@@ -76,7 +76,7 @@ namespace Demo_FileIO_NTier
                     LastName = "",
                     FirstName = "Motaro",
                     Game = "Mortal Kombat",
-                    Gender = OtherCharacter.GenderType.MALE
+                    Gender = OtherCharacter.GenderType.NOTSPECIFIED
                 },
                 new OtherCharacter()
                 {
@@ -84,7 +84,7 @@ namespace Demo_FileIO_NTier
                     LastName = "Tsung",
                     FirstName = "Shang",
                     Game = "Mortal Kombat",
-                    Gender = OtherCharacter.GenderType.FEMALE
+                    Gender = OtherCharacter.GenderType.MALE
                 },
                 new OtherCharacter()
                 {
@@ -92,7 +92,7 @@ namespace Demo_FileIO_NTier
                     LastName = "Chi",
                     FirstName = "Quan",
                     Game = "Mortal Kombat",
-                    Gender = OtherCharacter.GenderType.FEMALE
+                    Gender = OtherCharacter.GenderType.MALE
                 }
             };
 

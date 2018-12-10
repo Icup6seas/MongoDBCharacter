@@ -13,17 +13,19 @@ namespace Demo_FileIO_NTier.PresentationLayer
         static CharacterBLL _charactersBLL;
         static OtherCharacterBLL _otherCharactersBLL;
 
-        public Presenter(CharacterBLL characterBLL)
+        public Presenter(CharacterBLL characterBLL, OtherCharacterBLL otherCharacterBLL)
         {
             _charactersBLL = characterBLL;
-            ManageApplicationLoop();
-        }
-
-        public Presenter(OtherCharacterBLL otherCharacterBLL)
-        {
             _otherCharactersBLL = otherCharacterBLL;
             ManageApplicationLoop();
         }
+
+        //Repeat from above?
+        //public Presenter(OtherCharacterBLL otherCharacterBLL)
+        //{
+        //    _otherCharactersBLL = otherCharacterBLL;
+        //    ManageApplicationLoop();
+        //}
 
         private void ManageApplicationLoop()
         {

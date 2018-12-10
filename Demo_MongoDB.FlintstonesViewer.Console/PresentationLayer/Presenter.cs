@@ -11,12 +11,12 @@ namespace Demo_FileIO_NTier.PresentationLayer
     class Presenter
     {
         static CharacterBLL _charactersBLL;
-        static OtherCharacterBLL _otherCharactersBLL;
+        //static OtherCharacterBLL _otherCharactersBLL;
 
-        public Presenter(CharacterBLL characterBLL, OtherCharacterBLL otherCharacterBLL)
+        public Presenter(CharacterBLL characterBLL/*, OtherCharacterBLL otherCharacterBLL*/)
         {
             _charactersBLL = characterBLL;
-            _otherCharactersBLL = otherCharacterBLL;
+            //_otherCharactersBLL = otherCharacterBLL;
             ManageApplicationLoop();
         }
 
@@ -31,7 +31,7 @@ namespace Demo_FileIO_NTier.PresentationLayer
         {
             DisplayWelcomeScreen();
             DisplayListOfCharacters();
-            DisplayListOfOtherCharacters();
+            //DisplayListOfOtherCharacters();
             DisplayClosingScreen();
         }
 
@@ -60,27 +60,27 @@ namespace Demo_FileIO_NTier.PresentationLayer
             DisplayContinuePrompt();
         }
 
-        private void DisplayListOfOtherCharacters()
-        {
-            bool success;
-            string message;
+        //private void DisplayListOfOtherCharacters()
+        //{
+        //    bool success;
+        //    string message;
 
-            List<OtherCharacter> otherCharacters = _otherCharactersBLL.GetOtherCharacters(out success, out message) as List<OtherCharacter>;
-            otherCharacters = otherCharacters.OrderBy(c => c.Id).ToList();
+        //    List<OtherCharacter> otherCharacters = _otherCharactersBLL.GetOtherCharacters(out success, out message) as List<OtherCharacter>;
+        //    otherCharacters = otherCharacters.OrderBy(c => c.Id).ToList();
 
-            DisplayHeader("List of Other Characters");
+        //    DisplayHeader("List of Other Characters");
 
-            if (success)
-            {
-                DisplayOtherCharacterTable(otherCharacters);
-            }
-            else
-            {
-                Console.WriteLine(message);
-            }
+        //    if (success)
+        //    {
+        //        DisplayOtherCharacterTable(otherCharacters);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine(message);
+        //    }
 
-            DisplayContinuePrompt();
-        }
+        //    DisplayContinuePrompt();
+        //}
 
         /// <summary>
         /// display a table with id and full name columns
@@ -108,27 +108,27 @@ namespace Demo_FileIO_NTier.PresentationLayer
             }
         }
 
-        private void DisplayOtherCharacterTable(List<OtherCharacter> otherCharacters)
-        {
-            StringBuilder columnHeader = new StringBuilder();
+        //private void DisplayOtherCharacterTable(List<OtherCharacter> otherCharacters)
+        //{
+        //    StringBuilder columnHeader = new StringBuilder();
 
-            columnHeader.Append("Id".PadRight(8));
-            columnHeader.Append("Full Name".PadRight(25));
+        //    columnHeader.Append("Id".PadRight(8));
+        //    columnHeader.Append("Full Name".PadRight(25));
 
-            Console.WriteLine(columnHeader.ToString());
+        //    Console.WriteLine(columnHeader.ToString());
 
-            otherCharacters = otherCharacters.OrderBy(c => c.Id).ToList();
+        //    otherCharacters = otherCharacters.OrderBy(c => c.Id).ToList();
 
-            foreach (OtherCharacter otherCharacter in otherCharacters)
-            {
-                StringBuilder otherCharacterInfo = new StringBuilder();
+        //    foreach (OtherCharacter otherCharacter in otherCharacters)
+        //    {
+        //        StringBuilder otherCharacterInfo = new StringBuilder();
 
-                otherCharacterInfo.Append(otherCharacter.Id.ToString().PadRight(8));
-                otherCharacterInfo.Append(otherCharacter.FullName().PadRight(25));
+        //        otherCharacterInfo.Append(otherCharacter.Id.ToString().PadRight(8));
+        //        otherCharacterInfo.Append(otherCharacter.FullName().PadRight(25));
 
-                Console.WriteLine(otherCharacterInfo.ToString());
-            }
-        }
+        //        Console.WriteLine(otherCharacterInfo.ToString());
+        //    }
+        //}
 
         /// <summary>
         /// display page header
@@ -159,7 +159,7 @@ namespace Demo_FileIO_NTier.PresentationLayer
         {
             Console.Clear();
             Console.WriteLine();
-            Console.WriteLine("\t\tWelcome to the Flintstone Viewer");
+            Console.WriteLine("\t\tWelcome to the Mortal Kombat Character Viewer");
 
             DisplayContinuePrompt();
         }

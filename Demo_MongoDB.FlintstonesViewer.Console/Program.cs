@@ -30,90 +30,155 @@ namespace Demo_FileIO_NTier
         {
             List<Character> characters = new List<Character>()
             {
+
                 new Character()
                 {
                     Id = 1,
-                    LastName = "Flintstone",
-                    FirstName = "Fred",
-                    Address = "301 Cobblestone Way",
-                    City = "Bedrock",
-                    State = "MI",
-                    Zip = "70777",
-                    Age = 28,
+                    LastName = "Raiden",
+                    FirstName = "Lord",
+                    Game = "Mortal Kombat",
                     Gender = Character.GenderType.MALE
                 },
                 new Character()
                 {
                     Id = 2,
-                    LastName = "Rubble",
-                    FirstName = "Barney",
-                    Address = "303 Cobblestone Way",
-                    City = "Bedrock",
-                    State = "MI",
-                    Zip = "70777",
-                    Age = 28,
-                    Gender = Character.GenderType.FEMALE
-                },
-                new Character()
-                {
-                    Id = 3,
-                    LastName = "Flintstone",
-                    FirstName = "Wilma",
-                    Address = "301 Cobblestone Way",
-                    City = "Bedrock",
-                    State = "MI",
-                    Zip = "70777",
-                    Age = 27,
-                    Gender = Character.GenderType.FEMALE
-                },
-                new Character()
-                {
-                    Id = 4,
-                    LastName = "Flintstone",
-                    FirstName = "Pebbles",
-                    Address = "301 Cobblestone Way",
-                    City = "Bedrock",
-                    State = "MI",
-                    Zip = "70777",
-                    Age = 1,
-                    Gender = Character.GenderType.FEMALE
-                },
-                new Character()
-                {
-                    Id = 5,
-                    LastName = "Rubble",
-                    FirstName = "Betty",
-                    Address = "303 Cobblestone Way",
-                    City = "Bedrock",
-                    State = "MI",
-                    Zip = "70777",
-                    Age = 26,
-                    Gender = Character.GenderType.FEMALE
-                },
-                new Character()
-                {
-                    Id = 6,
-                    LastName = "Rubble",
-                    FirstName = "Bamm-Bamm",
-                    Address = "303 Cobblestone Way",
-                    City = "Bedrock",
-                    State = "MI",
-                    Zip = "70777",
-                    Age = 2,
+                    LastName = "Zero",
+                    FirstName = "Sub",
+                    Game = "Mortal Kombat",
                     Gender = Character.GenderType.MALE
                 },
                 new Character()
                 {
-                    Id = 7,
+                    Id = 3,
                     LastName = "",
-                    FirstName = "Dino",
-                    Address = "301 Cobblestone Way",
-                    City = "Bedrock",
-                    State = "MI",
-                    Zip = "70777",
-                    Age = 7,
-                    Gender = Character.GenderType.FEMALE
+                    FirstName = "Scorpion",
+                    Game = "Mortal Kombat",
+                    Gender = Character.GenderType.MALE
+                },
+                new Character()
+                {
+                    Id = 4,
+                    LastName = "Kang",
+                    FirstName = "Liu",
+                    Game = "Mortal Kombat",
+                    Gender = Character.GenderType.MALE
+                },
+                new Character()
+                {
+                    Id = 5,
+                    LastName = "Kahn",
+                    FirstName = "Shao",
+                    Game = "Mortal Kombat",
+                    Gender = Character.GenderType.MALE
+                },
+                new Character()
+                {
+                    Id = 6,
+                    LastName = "",
+                    FirstName = "Motaro",
+                    Game = "Mortal Kombat",
+                    Gender = Character.GenderType.NOTSPECIFIED
+                },
+                new Character()
+                {
+                    Id = 7,
+                    LastName = "Tsung",
+                    FirstName = "Shang",
+                    Game = "Mortal Kombat",
+                    Gender = Character.GenderType.MALE
+                },
+                new Character()
+                {
+                    Id = 8,
+                    LastName = "Chi",
+                    FirstName = "Quan",
+                    Game = "Mortal Kombat",
+                    Gender = Character.GenderType.MALE
                 }
+                //new Character()
+                //{
+                //    Id = 1,
+                //    LastName = "Flintstone",
+                //    FirstName = "Fred",
+                //    Address = "301 Cobblestone Way",
+                //    City = "Bedrock",
+                //    State = "MI",
+                //    Zip = "70777",
+                //    Age = 28,
+                //    Gender = Character.GenderType.MALE
+                //},
+                //new Character()
+                //{
+                //    Id = 2,
+                //    LastName = "Rubble",
+                //    FirstName = "Barney",
+                //    Address = "303 Cobblestone Way",
+                //    City = "Bedrock",
+                //    State = "MI",
+                //    Zip = "70777",
+                //    Age = 28,
+                //    Gender = Character.GenderType.FEMALE
+                //},
+                //new Character()
+                //{
+                //    Id = 3,
+                //    LastName = "Flintstone",
+                //    FirstName = "Wilma",
+                //    Address = "301 Cobblestone Way",
+                //    City = "Bedrock",
+                //    State = "MI",
+                //    Zip = "70777",
+                //    Age = 27,
+                //    Gender = Character.GenderType.FEMALE
+                //},
+                //new Character()
+                //{
+                //    Id = 4,
+                //    LastName = "Flintstone",
+                //    FirstName = "Pebbles",
+                //    Address = "301 Cobblestone Way",
+                //    City = "Bedrock",
+                //    State = "MI",
+                //    Zip = "70777",
+                //    Age = 1,
+                //    Gender = Character.GenderType.FEMALE
+                //},
+                //new Character()
+                //{
+                //    Id = 5,
+                //    LastName = "Rubble",
+                //    FirstName = "Betty",
+                //    Address = "303 Cobblestone Way",
+                //    City = "Bedrock",
+                //    State = "MI",
+                //    Zip = "70777",
+                //    Age = 26,
+                //    Gender = Character.GenderType.FEMALE
+                //},
+                //new Character()
+                //{
+                //    Id = 6,
+                //    LastName = "Rubble",
+                //    FirstName = "Bamm-Bamm",
+                //    Address = "303 Cobblestone Way",
+                //    City = "Bedrock",
+                //    State = "MI",
+                //    Zip = "70777",
+                //    Age = 2,
+                //    Gender = Character.GenderType.MALE
+                //},
+                //new Character()
+                //{
+                //    Id = 7,
+                //    LastName = "",
+                //    FirstName = "Dino",
+                //    Address = "301 Cobblestone Way",
+                //    City = "Bedrock",
+                //    State = "MI",
+                //    Zip = "70777",
+                //    Age = 7,
+                //    Gender = Character.GenderType.FEMALE
+                //}
             };
 
             return characters;
